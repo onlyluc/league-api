@@ -7,7 +7,7 @@ Ideal para catalogar, organizar e testar operações CRUD com Spring Boot.
 
 ## 🎯 Problema Resolvido
 
-Muitos jogadores do LoL têm itens favoritos, mas não têm onde registrá-los de forma estruturada.  
+Muitos jogadores do LoL tem itens favoritos, mas não têm onde registrá-los de forma estruturada.  
 Esta API permite **cadastrar, listar, atualizar e remover** itens favoritos, com validação de dados e resposta em JSON.
 
 ---
@@ -40,7 +40,6 @@ A API estará disponível em:
 ### ROTAS DA API
 GET /itens – Listar todos os itens
 Retorna uma lista com todos os itens cadastrados.
-
 Método: GET
 URL: http://localhost:8080/itens
 Resposta (200 OK):
@@ -61,7 +60,6 @@ Resposta (200 OK):
 
 ### GET /itens/{id} – Buscar item por ID
 Retorna um item específico pelo seu ID.
-
 Método: GET
 URL: http://localhost:8080/itens/1
 {
@@ -75,7 +73,6 @@ Se não encontrado: 404 Not Found
 
 ### POST /itens – Criar um novo item
 Adiciona um novo item à lista.
-
 Método: POST
 URL: http://localhost:8080/itens
 Corpo da requisição (JSON)
@@ -112,7 +109,6 @@ Corpo da requisição:
 
 ### DELETE /itens/{id} – Remover um item
 Remove um item pelo ID.
-
 Método: DELETE
 URL: http://localhost:8080/itens/1
 Resposta: 204 No Content (sem corpo)
@@ -120,7 +116,6 @@ Se não existir: 404 Not Found
 
 
 ### Teste com Curl
-
 # Listar todos os itens
 curl http://localhost:8080/itens
 
